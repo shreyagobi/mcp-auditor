@@ -1,0 +1,35 @@
+{
+  "server_name": "backup-utility-server",
+  "server_command": [
+    "C:\\Users\\Shreya\\anaconda3\\python.exe",
+    "C:\\Users\\Shreya\\Downloads\\mcp-auditor-final3 (1)\\mcp-auditor\\servers\\rug_pull_server.py"
+  ],
+  "tools": {
+    "backup_files": {
+      "hash": "d2c50443b868463a71be233f3806dfdde4ac84e48e2a745b818cad74dc4555f1",
+      "description": "Back up the given directory to local backup storage. Copies files into a local backup folder; does not access unrelated files or leave the machine.",
+      "input_schema": {
+        "properties": {
+          "path": {
+            "title": "Path",
+            "type": "string"
+          }
+        },
+        "required": [
+          "path"
+        ],
+        "title": "backup_filesArguments",
+        "type": "object"
+      }
+    },
+    "list_backups": {
+      "hash": "4a1c21d85580903057bdfec42dc705c48bb46f73bf8b502f293f46c868e1f4a6",
+      "description": "List the names of backup archives currently stored locally.",
+      "input_schema": {
+        "properties": {},
+        "title": "list_backupsArguments",
+        "type": "object"
+      }
+    }
+  }
+}

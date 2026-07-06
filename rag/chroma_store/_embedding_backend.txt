@@ -1,0 +1,1 @@
+{"backend": "ollama", "model": "nomic-embed-text", "normalized": true, "url": "http://localhost:11434", "version": 2}

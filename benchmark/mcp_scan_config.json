@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "clean-notes-server": {
+      "command": "python3",
+      "args": ["servers/clean_server.py"]
+    },
+    "weather-and-utils-server": {
+      "command": "python3",
+      "args": ["servers/tool_poisoning_server.py"]
+    },
+    "file-helper-server": {
+      "command": "python3",
+      "args": ["servers/permission_overreach_server.py"]
+    }
+  }
+}
