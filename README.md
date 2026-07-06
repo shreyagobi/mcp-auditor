@@ -126,7 +126,7 @@ generic list of common tool names, feeding the LLM computed evidence
 this is what makes the generalization result meaningful rather than
 circular.
 
-### Known limitations (state these, don't hide them)
+### Known limitations 
 
 - Edit-distance typosquat detection misses double-transposition typos
   (e.g. sned_emial vs send_email) — Damerau-Levenshtein would fix
