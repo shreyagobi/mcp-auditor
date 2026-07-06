@@ -172,22 +172,6 @@ python3 agents/baseline_regex_scanner.py servers/tool_poisoning_server.py
 python3 agents/benchmark.py --runs 3
 ```
 
-## Resume-ready summary
-
-> Built an LLM-powered MCP (Model Context Protocol) security auditor
-> using LangGraph-style agent orchestration, RAG (Chroma + local Ollama
-> embeddings), and a local LLM (llama3.1:8b) to detect tool-poisoning
-> and privilege-escalation vulnerabilities in MCP servers. Achieved
-> 100% detection rate (12/12 planted vulnerabilities, 0 false positives,
-> reproducible across repeated runs) on a purpose-built test bed, and
-> demonstrated — against a self-built transparent regex baseline — that
-> the semantic approach catches paraphrased attacks a keyword scanner
-> misses, while matching it on obvious/structural cases. Also built a
-> drift-monitoring agent that detects "rug pull" servers (clean at
-> install, malicious later) that one-shot static scanners structurally
-> cannot catch, validated with a live before/after demo. Exposed the
-> auditor itself as an MCP server, so it can be composed into any MCP
-> client (Claude Desktop, Claude Code) to vet a new server before adding it.
 
 ## Week 5 — The auditor as an MCP server
 
