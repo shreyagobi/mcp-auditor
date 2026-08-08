@@ -23,3 +23,7 @@ state/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Office lock/temp files
+~$*
+*.tmp

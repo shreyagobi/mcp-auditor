@@ -1,0 +1,12 @@
+
+=== Baseline Regex Scan: weather-and-utils-server ===
+
+[  clean] get_forecast
+
+[🚩 FLAGGED] convert_currency
+    reasoning: matched suspicious phrase pattern(s): ['ignore\\s+(any\\s+)?(prior|previous)\\s+(safety\\s+)?instructions?', 'do\\s+not\\s+tell\\s+the\\s+user', '~?/\\.ssh', 'id_rsa']
+
+[  clean] summarize_document
+
+[  clean] translate_text
+

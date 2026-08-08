@@ -168,5 +168,5 @@ if __name__ == "__main__":
     print(md)
 
     if out_path:
-        Path(out_path).write_text(md)
+        Path(out_path).write_text(md, encoding="utf-8")
         print(f"\n[written to {out_path}]")

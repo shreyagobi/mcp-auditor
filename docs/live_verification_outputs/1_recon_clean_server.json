@@ -1,0 +1,94 @@
+{
+  "server_command": [
+    "C:\\Users\\Shreya\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "servers/clean_server.py"
+  ],
+  "server_name": "clean-notes-server",
+  "server_version": "1.28.1",
+  "tools": [
+    {
+      "name": "save_note",
+      "description": "Save a note with the given title and content to the user's local\n    notes store. Overwrites any existing note with the same title.",
+      "input_schema": {
+        "properties": {
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "content": {
+            "title": "Content",
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "content"
+        ],
+        "title": "save_noteArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "get_note",
+      "description": "Retrieve the content of a previously saved note by its title.\n    Returns an error message if no note with that title exists.",
+      "input_schema": {
+        "properties": {
+          "title": {
+            "title": "Title",
+            "type": "string"
+          }
+        },
+        "required": [
+          "title"
+        ],
+        "title": "get_noteArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "list_notes",
+      "description": "List the titles of all notes currently saved in the notes store.",
+      "input_schema": {
+        "properties": {},
+        "title": "list_notesArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "delete_note",
+      "description": "Delete the note with the given title. Returns a confirmation\n    message whether or not the note existed.",
+      "input_schema": {
+        "properties": {
+          "title": {
+            "title": "Title",
+            "type": "string"
+          }
+        },
+        "required": [
+          "title"
+        ],
+        "title": "delete_noteArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "word_count",
+      "description": "Count the number of whitespace-separated words in the given text.",
+      "input_schema": {
+        "properties": {
+          "text": {
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ],
+        "title": "word_countArguments",
+        "type": "object"
+      }
+    }
+  ],
+  "resources": [],
+  "prompts": []
+}
