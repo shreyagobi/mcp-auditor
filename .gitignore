@@ -27,3 +27,7 @@ Thumbs.db
 # Office lock/temp files
 ~$*
 *.tmp
+
+# Generated at runtime by the demo commands in README.md
+/report.md
+/sandbox/
